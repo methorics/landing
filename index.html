@@ -4,199 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>МЕТОРИКА — Система моделирования бизнеса</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    :root {
-      --bg: #0a1428;
-      --accent: #00f5ff;
-      --orange: #ff8c00;
-    }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(180deg, #0a1428 0%, #1a2338 100%);
-      color: #e0f0ff;
-      line-height: 1.5;
-    }
-    .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      background: url('https://via.placeholder.com/1200x400/0a1428/00f5ff?text=МЕТОРИКА') center/cover;
-      position: relative;
-    }
-    header::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(to right, transparent, var(--accent), transparent);
-    }
-    h1 {
-      font-size: 3.2rem;
-      margin: 20px 0 10px;
-      text-shadow: 0 0 20px var(--accent);
-    }
-    .subtitle {
-      font-size: 1.3rem;
-      opacity: 0.9;
-    }
-
-    .description {
-      background: rgba(255,255,255,0.05);
-      padding: 50px 30px;
-      text-align: center;
-      font-size: 1.1rem;
-    }
-
-    .section {
-      padding: 60px 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-
-    .features {
-      background: rgba(0, 245, 255, 0.05);
-    }
-
-    .card {
-      background: rgba(255,255,255,0.08);
-      border-radius: 16px;
-      padding: 25px;
-      margin-bottom: 20px;
-      transition: all 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px rgba(0, 245, 255, 0.3);
-    }
-
-    .examples {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .example-item {
-      background: rgba(255, 140, 0, 0.1);
-      padding: 20px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .tools {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .tool-card {
-      text-align: center;
-      background: rgba(255,255,255,0.06);
-      padding: 30px 20px;
-      border-radius: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 60px 20px;
-      background: #0a1428;
-      border-top: 1px solid rgba(0,245,255,0.2);
-    }
-    .highlight {
-      color: var(--accent);
-      font-weight: bold;
-    }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    .hero { background: linear-gradient(135deg, #0a1428 0%, #1a2338 100%); }
+    .glow { text-shadow: 0 0 20px rgb(0 245 255); }
   </style>
 </head>
-<body>
+<body class="bg-[#0a1428] text-white">
 
   <!-- HEADER -->
-  <header>
-    <div class="container">
-      <h1>МЕТОРИКА</h1>
-      <p class="subtitle">Система моделирования бизнеса<br>и управленческой динамики</p>
+  <header class="hero py-12 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-5xl md:text-6xl font-bold glow mb-4">МЕТОРИКА</h1>
+      <p class="text-xl md:text-2xl text-cyan-300">Система моделирования бизнеса<br>и управленческой динамики</p>
     </div>
   </header>
 
   <!-- ОПИСАНИЕ -->
-  <section class="description">
-    <div class="container">
-      <p>Большинство аналитических систем показывают цифры.<br>
-      <strong>Меторика</strong> показывает поведение компании как живой экосистемы — где возникают перегрузки, конфликты, потери устойчивости и точки роста.</p>
-      <p style="margin-top: 25px;">
-        В основе платформы — уникальная математическая модель, в которой организация описывается через взаимодействие системы и среды.
+  <section class="py-12 bg-[#112233]">
+    <div class="max-w-4xl mx-auto px-6 text-center text-lg leading-relaxed">
+      <p class="mb-6">
+        Большинство аналитических систем показывают цифры.<br>
+        <strong class="text-cyan-400">Меторика</strong> показывает поведение компании как живой экосистемы — 
+        где возникают перегрузки, конфликты, потери устойчивости и точки роста.
+      </p>
+      <p>
+        В основе платформы — уникальная математическая модель, где организация описывается через взаимодействие системы и среды.
       </p>
     </div>
   </section>
 
-  <!-- ЧТО ДЕЛАЕТ СИСТЕМА + ПРИМЕРЫ -->
-  <section class="section features">
-    <div class="container">
-      <h2 style="text-align:center; margin-bottom:40px; color:var(--accent)">Что делает система</h2>
-      <div class="card">
-        <strong>Моделирует сценарии развития компании</strong>
-      </div>
-      <div class="card">
-        <strong>Выявляет скрытые системные риски</strong>
-      </div>
-      <div class="card">
-        <strong>Тестирует устойчивость бизнеса к кризисам и «чёрным лебедям»</strong>
-      </div>
-      <div class="card">
-        <strong>Прогнозирует вторичные последствия решений</strong>
-      </div>
-      <div class="card">
-        <strong>Прогоняет шоковые сценарии до их наступления</strong>
-      </div>
-    </div>
-
-    <div class="container">
-      <h2 style="text-align:center; margin-bottom:40px;">Примеры сред моделирования</h2>
-      <div class="examples">
-        <div class="example-item"><span style="font-size:2rem">1</span><div><strong>Правообладатель</strong> в среде интеллектуальной собственности</div></div>
-        <div class="example-item"><span style="font-size:2rem">2</span><div><strong>Производитель</strong> в промышленной среде</div></div>
-        <div class="example-item"><span style="font-size:2rem">3</span><div><strong>Fintech-компания</strong> в регуляторной среде</div></div>
-        <div class="example-item"><span style="font-size:2rem">4</span><div><strong>Платформенный бизнес</strong> в e-commerce</div></div>
-        <div class="example-item"><span style="font-size:2rem">5</span><div><strong>Логистический оператор</strong> в распределительной сети</div></div>
-        <div class="example-item"><span style="font-size:2rem">6</span><div><strong>Экспортёр</strong> на международных рынках</div></div>
-        <div class="example-item"><span style="font-size:2rem">7</span><div><strong>Франчайзер</strong> в розничной сети</div></div>
-        <div class="example-item"><span style="font-size:2rem">8</span><div><strong>Разработчик</strong> программных решений</div></div>
+  <!-- ЧТО ДЕЛАЕТ СИСТЕМА -->
+  <section class="py-12">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-cyan-400 text-center mb-10">Что делает система</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[#1a2338] p-6 rounded-2xl flex gap-4">
+          <span class="text-4xl">🧭</span>
+          <div><strong>Моделирует сценарии развития компании</strong></div>
+        </div>
+        <div class="bg-[#1a2338] p-6 rounded-2xl flex gap-4">
+          <span class="text-4xl">🛡️</span>
+          <div><strong>Выявляет скрытые системные риски</strong></div>
+        </div>
+        <div class="bg-[#1a2338] p-6 rounded-2xl flex gap-4">
+          <span class="text-4xl">☂️</span>
+          <div><strong>Тестирует устойчивость бизнеса к кризисам и «чёрным лебедям»</strong></div>
+        </div>
+        <div class="bg-[#1a2338] p-6 rounded-2xl flex gap-4">
+          <span class="text-4xl">🔮</span>
+          <div><strong>Прогнозирует вторичные последствия решений</strong></div>
+        </div>
+        <div class="bg-[#1a2338] p-6 rounded-2xl flex gap-4">
+          <span class="text-4xl">💥</span>
+          <div><strong>Прогоняет шоковые сценарии до их наступления</strong></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ИНСТРУМЕНТЫ -->
-  <section class="tools container">
-    <div class="tool-card">
-      <h3>🔥 Шоковые симуляторы</h3>
-      <p>Прогон экстремальных сценариев для оценки выживаемости бизнеса.</p>
+  <!-- ПРИМЕРЫ -->
+  <section class="py-12 bg-[#112233]">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-orange-400 text-center mb-10">Примеры сред моделирования</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-[#1f2a44] p-5 rounded-xl">1. Правообладатель в среде интеллектуальной собственности</div>
+        <div class="bg-[#1f2a44] p-5 rounded-xl">2. Производитель в промышленной среде</div>
+        <div class="bg-[#1f2a44] p-5 rounded-xl">3. Fintech-компания в регуляторной среде</div>
+        <div class="bg-[#1f2a44] p-5 rounded-xl">4. Платформенный бизнес в e-commerce</div>
+        <div class="bg-[#1f2a44] p-5 rounded-xl">5. Логистический оператор в распределительной сети</div>
+        <div class="bg-[#1f2a44] p-5 rounded-xl">6. Экспортёр на международных рынках</div>
+        <div class="bg-[#1f2a44] p-5 rounded-xl">7. Франчайзер в розничной сети</div>
+        <div class="bg-[#1f2a44] p-5 rounded-xl">8. Разработчик программных решений</div>
+      </div>
     </div>
-    <div class="tool-card">
-      <h3>🤖 ИИ-агенты платформы</h3>
-      <p>Автономные агенты собирают данные, строят отчёты и выявляют скрытые дисбалансы в экосистеме.</p>
-    </div>
-    <div class="tool-card">
-      <h3>🌌 3D-дашборд компании</h3>
-      <p>Визуализация бизнеса как живой трёхмерной экосистемы в реальном времени.</p>
+  </section>
+
+  <!-- ТРИ ИНСТРУМЕНТА -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Мощные инструменты Меторики</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-gradient-to-b from-[#1a2338] to-[#0f1828] p-8 rounded-3xl text-center border border-cyan-500/20">
+          <div class="text-6xl mb-4">🔥</div>
+          <h3 class="text-2xl font-bold mb-3">Шоковые симуляторы</h3>
+          <p class="text-gray-300">Прогон экстремальных сценариев для оценки выживаемости бизнеса.</p>
+        </div>
+
+        <div class="bg-gradient-to-b from-[#1a2338] to-[#0f1828] p-8 rounded-3xl text-center border border-purple-500/20">
+          <div class="text-6xl mb-4">🤖</div>
+          <h3 class="text-2xl font-bold mb-3">ИИ-агенты платформы</h3>
+          <p class="text-gray-300">Автономные агенты собирают данные, строят отчёты и выявляют скрытые дисбалансы.</p>
+        </div>
+
+        <div class="bg-gradient-to-b from-[#1a2338] to-[#0f1828] p-8 rounded-3xl text-center border border-cyan-500/20">
+          <div class="text-6xl mb-4">🌌</div>
+          <h3 class="text-2xl font-bold mb-3">3D-дашборд компании</h3>
+          <p class="text-gray-300">Визуализация бизнеса как живой трёхмерной экосистемы в реальном времени.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p style="font-size:1.4rem; margin-bottom:20px;">
-        <strong>Не просто BI или отчёты.</strong><br>
-        А инструмент системного понимания бизнеса.
-      </p>
-      <p class="highlight" style="font-size:1.5rem;">
-        Проверяйте решения до того, как они становятся последствиями.
-      </p>
+  <footer class="bg-black py-16 text-center border-t border-cyan-900">
+    <div class="max-w-3xl mx-auto px-6">
+      <p class="text-2xl font-semibold mb-4">Не просто BI или отчёты.</p>
+      <p class="text-3xl font-bold text-cyan-400 mb-8">А инструмент системного понимания бизнеса.</p>
+      <p class="text-xl">Проверяйте решения до того, как они становятся последствиями.</p>
     </div>
   </footer>
 
