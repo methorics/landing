@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг</title>
+    <style>
+        /* Сброс базовых отступов */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #0f172a; /* Темный фон под цвет интерфейса */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Контейнер, ограничивающий максимальную ширину (актуально для мобильных макетов на ПК) */
+        .container {
+            width: 100%;
+            max-width: 600px; 
+            display: flex;
+            flex-direction: column;
+        }
+        /* Стили для картинок, чтобы они шли стык в стык без зазоров */
+        .landing-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="landing-img" src="IMG_5842.jpeg" alt="Экран 5842">
+        <img class="landing-img" src="IMG_5843.jpeg" alt="Экран 5843">
+        <img class="landing-img" src="IMG_5844.jpeg" alt="Экран 5844">
+        <img class="landing-img" src="IMG_5845.jpeg" alt="Экран 5845">
+        <img class="landing-img" src="IMG_5846.jpeg" alt="Экран 5846">
+        <img class="landing-img" src="IMG_5847.jpeg" alt="Экран 5847">
+        <img class="landing-img" src="IMG_5848.jpeg" alt="Экран 5848">
+        <img class="landing-img" src="IMG_5849.jpeg" alt="Экран 5849">
+        <img class="landing-img" src="IMG_5850.jpeg" alt="Экран 5850">
+        <img class="landing-img" src="IMG_5851.jpeg" alt="Экран 5851">
+        <img class="landing-img" src="IMG_5852.jpeg" alt="Экран 5852">
+        <img class="landing-img" src="IMG_5853.jpeg" alt="Экран 5853">
+        <img class="landing-img" src="IMG_5854.jpeg" alt="Экран 5854">
+        <img class="landing-img" src="IMG_5855.jpeg" alt="Экран 5855">
+        <img class="landing-img" src="IMG_5856.jpeg" alt="Экран 5856">
+        <img class="landing-img" src="IMG_5857.jpeg" alt="Экран 5857">
+    </div>
+
+</body>
+</html>
